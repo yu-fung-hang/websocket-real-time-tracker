@@ -6,10 +6,10 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @EnableScheduling
 @SpringBootApplication
-public class WebsocketRealTimeTrackerApplication {
+public class WebSocketRealTimeTrackerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(WebsocketRealTimeTrackerApplication.class, args);
+        SpringApplication.run(WebSocketRealTimeTrackerApplication.class, args);
     }
 
 }
