@@ -24,7 +24,7 @@ This project is a WebSocket template that fetches data from MongoDB at regular i
 ![](images/1.png)
 
 ## Steps to create a new MongoDB user
-1. Run cmd as Administrator, start MongoDB:
+1. Run cmd as Administrator, start MongoDB by doing the following:
     1. execute `net start mongodb`;
     2. execute `mongo`. 
 2. Use `admin` database and create a root user:
