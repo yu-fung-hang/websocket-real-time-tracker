@@ -21,7 +21,7 @@ It is a websocket-server template that fetches data from MongoDB at regular inte
 3. Edit `\src\main\resources\application.properties`: replace `spring.data.mongodb.username`, `spring.data.mongodb.password`, `spring.data.mongodb.database` and `spring.data.mongodb.authentication-database` with your own ones.
 4. Run `\src\main\java\com\singfung\tracker\WebSocketRealTimeTrackerApplication.java`.
 5. Add some samples to MongoDB by running `\api-samples\saveGPS.http`. It adds the GPS information of two vehicles into MongoDB (`v100` and `v101`).
-6. Open three tabs in a browser(`http://localhost:8080/v100.html`, `http://localhost:8080/v101.html` and `http://localhost:8080/v102.html`). We could see that tab `v100` and tab `v101` would receive the GPS information of its own vehicle every 2 seconds, while `v102` could receive no data since its record is not found in MongoDB.
+6. Open three tabs in a browser(`http://localhost:8080/v100.html`, `http://localhost:8080/v101.html` and `http://localhost:8080/v102.html`). We could see that tab `v100` and tab `v101` would receive the GPS information of its own vehicle every 2 seconds, while `v102` could not receive any data since its record is not found in MongoDB.
 
 ![](images/1.png)
 
