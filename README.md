@@ -1,6 +1,6 @@
 # WebSocket Real-time Tracker
 
-This project is a twin project of [SockJS Real-time Tracker](https://github.com/sing-fung/sockjs-real-time-tracker).
+This is a twin project of [SockJS Real-time Tracker](https://github.com/sing-fung/sockjs-real-time-tracker).
 
 It is a websocket-server template that fetches data from MongoDB at regular intervals.
 
