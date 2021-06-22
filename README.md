@@ -4,6 +4,8 @@ This is a twin project of [SockJS Real-time Tracker](https://github.com/sing-fun
 
 It is a websocket-server template that fetches data from MongoDB at regular intervals.
 
+![](images/1.png)
+
 ## Prerequisites
 * Maven 3.6.0 or higher versions
 * Java 11
@@ -12,7 +14,7 @@ It is a websocket-server template that fetches data from MongoDB at regular inte
 ## Other frameworks
 * WebSocket
 * Spring Boot
-* Spring
+* Springgit push origin --force --all
 * Sping MVC
 
 ## How to run this project
@@ -22,8 +24,6 @@ It is a websocket-server template that fetches data from MongoDB at regular inte
 4. Run `\src\main\java\com\singfung\tracker\WebSocketRealTimeTrackerApplication.java`.
 5. Add some samples to MongoDB by running `\api-samples\saveGPS.http`. It adds the GPS information of two vehicles into MongoDB (`v100` and `v101`).
 6. Open three tabs in a browser(`http://localhost:8080/v100.html`, `http://localhost:8080/v101.html` and `http://localhost:8080/v102.html`). We could see that tab `v100` and tab `v101` would receive the GPS information of its own vehicle every 2 seconds, while `v102` could not receive any data since its record is not found in MongoDB.
-
-![](images/1.png)
 
 ## Steps to create a new MongoDB user
 1. Run cmd as Administrator, start MongoDB by doing the following:
