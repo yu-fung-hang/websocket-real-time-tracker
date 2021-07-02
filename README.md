@@ -14,7 +14,7 @@ It is a websocket-server template that fetches data from MongoDB at regular inte
 ## Other frameworks
 * WebSocket
 * Spring Boot
-* Springgit push origin --force --all
+* Spring
 * Sping MVC
 
 ## How to run this project
