@@ -15,7 +15,7 @@ public class GPSController
     public GPSController(GPSService gpsService)
     { this.gpsService = gpsService; }
 
-    //insert or update
+    // insert or update
     @PostMapping()
     public void saveGPS(@RequestBody GPS gps)
     { gpsService.saveGPS(gps); }
