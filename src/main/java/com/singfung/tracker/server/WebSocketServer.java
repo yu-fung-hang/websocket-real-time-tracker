@@ -19,9 +19,9 @@ import java.util.Map;
 public class WebSocketServer
 {
     @Autowired
-    GPSService GPSService;
+    GPSService gpsService;
 
-    private static Map<String,Session> sessionPools = new HashMap<>();
+    private static Map<String, Session> sessionPools = new HashMap<>();
 
     public void sendMessage(Session session, String message) throws IOException
     {
@@ -32,7 +32,7 @@ public class WebSocketServer
     @SendTo("/gps")
     public void trackGPS(String vehicleId, Session session)
     {
-        GPS gps = GPSService.getGPSByVehicleId(vehicleId);
+        GPS gps = gpsService.getGPSByVehicleId(vehicleId);
 
         if (gps != null)
         {
@@ -54,7 +54,7 @@ public class WebSocketServer
 
     public void updateGPS(String vehicleId)
     {
-        GPS gps = GPSService.getGPSByVehicleId(vehicleId);
+        GPS gps = gpsService.getGPSByVehicleId(vehicleId);
 
         if (gps != null)
         {
@@ -63,7 +63,7 @@ public class WebSocketServer
             gps.setLat(lat);
             gps.setLng(lng);
 
-            GPSService.saveGPS(gps);
+            gpsService.saveGPS(gps);
         }
     }
 
